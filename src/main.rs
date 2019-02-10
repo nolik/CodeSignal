@@ -1,5 +1,5 @@
-mod happy_tickets;
+mod sort_by_height;
 
 fn main() {
-    println!("{:?}", happy_tickets::is_lucky_ticket(239017));
+    println!("{:?}", sort_by_height::sort_by_height(vec![4, 2, 9, 11, 2, 16]));
 }
