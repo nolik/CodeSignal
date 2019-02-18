@@ -1,5 +1,7 @@
-mod alternation_sums;
+mod border;
 
 fn main() {
-    println!("{:?}", alternation_sums::alternating_sums(vec![50, 60, 60, 45, 70]));
+    println!("{:?}", border::add_border(vec!["aa".to_string(),
+                                             "**".to_string(),
+                                             "zz".to_string()]));
 }
