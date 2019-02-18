@@ -1,5 +1,5 @@
-mod reverse_in_parents;
+mod alternation_sums;
 
 fn main() {
-    println!("{:?}", reverse_in_parents::reverseInParentheses("foo(bar)baz(blim)".to_string()));
+    println!("{:?}", alternation_sums::alternating_sums(vec![50, 60, 60, 45, 70]));
 }
