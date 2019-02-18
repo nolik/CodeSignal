@@ -1,7 +1,5 @@
-mod border;
+mod are_similar;
 
 fn main() {
-    println!("{:?}", border::add_border(vec!["aa".to_string(),
-                                             "**".to_string(),
-                                             "zz".to_string()]));
+    println!("{:?}", are_similar::are_similar(vec![1, 2, 3], vec![2, 1, 3]));
 }
