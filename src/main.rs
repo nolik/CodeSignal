@@ -1,5 +1,5 @@
-mod are_similar;
+mod task;
 
 fn main() {
-    println!("{:?}", are_similar::are_similar(vec![1, 2, 3], vec![2, 1, 3]));
+    println!("{:?}", task::array_change::array_change(vec![2, 1, 10, 1]));
 }

@@ -1,4 +1,4 @@
-pub fn fn almost_increasing_sequence(array: Vec<i32>) -> bool {
+pub fn almost_increasing_sequence(array: Vec<i32>) -> bool {
     let mut prev = std::i32::MIN;
     let mut before_prev = std::i32::MIN;
     let mut allow_exceptions = true;
