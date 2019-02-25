@@ -9,7 +9,7 @@ For inputArray = [1, 1, 1], the output should be
 arrayChange(inputArray) = 3.
 */
 
-pub fn arrayChange(mut input_array: Vec<i32>) -> i32 {
+pub fn array_change(mut input_array: Vec<i32>) -> i32 {
     let mut counter = 0;
 
     for item in 0..input_array.len() - 1 {
