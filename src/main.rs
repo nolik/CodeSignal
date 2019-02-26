@@ -1,7 +1,6 @@
 mod task;
 
 fn main() {
-    //Expected output: 89510
     println!(
         "{:?}",
         task::array_change::array_change(vec![
@@ -14,5 +13,4 @@ fn main() {
             -915, -68, 542, 799
         ])
     );
-    //    println!("{:?}", task::array_change::array_change(vec![-10, -9, -111, -3]));
 }
