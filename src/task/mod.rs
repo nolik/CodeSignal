@@ -1,1 +1,1 @@
-pub mod array_change;
+pub mod palindrome_rearranging;
