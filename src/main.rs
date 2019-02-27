@@ -1,8 +1,10 @@
 mod task;
 
 fn main() {
-    println!(
-        "{:?}",
-        task::palindrome_rearranging::palindrome_rearranging("abdhuierf".to_string())
-    );
+    //yourLeft: 10
+    //yourRight: 15
+    //friendsLeft: 5
+    //friendsRight: 20
+    //    false
+    println!("{:?}", task::equal_strong::areEquallyStrong(10, 15, 5, 20));
 }

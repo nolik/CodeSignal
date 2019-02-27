@@ -1,1 +1,1 @@
-pub mod palindrome_rearranging;
+pub mod equal_strong;
