@@ -1,0 +1,6 @@
+[package]
+name = "code-signal"
+version = "0.1.0"
+authors = ["nolik"]
+
+[dependencies]

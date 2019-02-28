@@ -3,6 +3,6 @@ mod task;
 fn main() {
     println!(
         "{:?}",
-        task::palindrome_rearranging::palindrome_rearranging("abdhuierf".to_string())
+        task::array_adjacent_difference::array_maximal_adjacent_difference(vec![10, 11, 13, 111])
     );
 }
