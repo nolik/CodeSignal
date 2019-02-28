@@ -1,1 +1,1 @@
-pub mod palindrome_rearranging;
+pub mod array_adjacent_difference;
