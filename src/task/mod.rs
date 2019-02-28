@@ -1,1 +1,1 @@
-pub mod equal_strong;
+pub mod array_adjacent_difference;

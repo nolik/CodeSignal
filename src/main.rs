@@ -1,10 +1,8 @@
 mod task;
 
 fn main() {
-    //yourLeft: 10
-    //yourRight: 15
-    //friendsLeft: 5
-    //friendsRight: 20
-    //    false
-    println!("{:?}", task::equal_strong::areEquallyStrong(10, 15, 5, 20));
+    println!(
+        "{:?}",
+        task::array_adjacent_difference::array_maximal_adjacent_difference(vec![10, 11, 13])
+    );
 }
