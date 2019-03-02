@@ -3,6 +3,6 @@ mod task;
 fn main() {
     println!(
         "{:?}",
-        task::array_adjacent_difference::array_maximal_adjacent_difference(vec![10, 11, 13])
+        task::is_ipv4::isIPv4Address("172.331.254.1".to_string())
     );
 }
