@@ -1,1 +1,1 @@
-pub mod box_blur;
+pub mod minesweeper;
