@@ -1,1 +1,1 @@
-pub mod minesweeper;
+pub mod array_replace;
