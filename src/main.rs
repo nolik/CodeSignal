@@ -3,6 +3,6 @@ mod task;
 fn main() {
     println!(
         "{:?}",
-        task::is_even::evenDigitsOnly(642386)
+        task::variable_name::variableName("var_1__Int".to_string())
     );
 }
