@@ -3,6 +3,6 @@ mod task;
 fn main() {
     println!(
         "{:?}",
-        task::variable_name::variableName("var_1__Int".to_string())
+        task::alphabetic_shift::alphabeticShift("fuzzy".to_string())
     );
 }
