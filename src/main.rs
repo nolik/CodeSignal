@@ -3,6 +3,6 @@ mod task;
 fn main() {
     println!(
         "{:?}",
-        task::variable_name::variableName("var_1__Int".to_string())
+        task::chess_board_cell::chessBoardCellColor("H1".to_string(), "H1".to_string())
     );
 }

@@ -1,1 +1,1 @@
-pub mod variable_name;
+pub mod chess_board_cell;
