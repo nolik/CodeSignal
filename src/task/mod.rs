@@ -1,1 +1,1 @@
-pub mod circle_of_numbers;
+pub mod deposit_profit;

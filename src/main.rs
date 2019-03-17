@@ -1,5 +1,5 @@
 mod task;
 
 fn main() {
-    println!("{:?}", task::circle_of_numbers::circleOfNumbers(3, 1));
+    println!("{:?}", task::deposit_profit::depositProfit(100, 20, 170));
 }
