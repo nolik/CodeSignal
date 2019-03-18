@@ -1,5 +1,8 @@
 mod task;
 
 fn main() {
-    println!("{:?}", task::deposit_profit::depositProfit(100, 20, 170));
+    println!(
+        "{:?}",
+        task::absolute_sum_min::absoluteValuesSumMinimization(vec![2, 4, 7])
+    );
 }

@@ -1,1 +1,1 @@
-pub mod deposit_profit;
+pub mod absolute_sum_min;
