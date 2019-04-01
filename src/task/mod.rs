@@ -1,1 +1,1 @@
-pub mod absolute_sum_min;
+pub mod string_rearrangment;
