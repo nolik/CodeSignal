@@ -26,15 +26,27 @@ stringsRearrangement(inputArray) = false.
  "hf"]
 */
 pub fn stringsRearrangement(input_array: Vec<String>) -> bool {
-    return dbg!(has_one_difference(&input_array[0], &input_array[1]));
+    return input_array
+        .iter()
+        .filter(|item| {
+            input_array
+                .clone()
+                .iter()
+                .any(|x| has_one_difference(item, x))
+        })
+        .count()
+        >= input_array.get(0).unwrap().len() - 1;
+
+    //    return dbg!(has_one_difference(&input_array[0], &input_array[1]));
 }
 
 fn has_one_difference(s1: &str, s2: &str) -> bool {
-    // An iterator over different char pairs.
-    s1.chars()
+    println!(
+        "s1={:?}, s2={:?}", s1, s2);
+    dbg!(s1.chars()
         .zip(s2.chars())
         .filter(|(c1, c2)| c1 != c2)
         .take(2)
         .count()
-        == 1
+        == 1)
 }
