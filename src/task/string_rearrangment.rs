@@ -30,17 +30,11 @@ pub fn stringsRearrangement(input_array: Vec<String>) -> bool {
 }
 
 fn has_one_difference(s1: &str, s2: &str) -> bool {
-    let mut found_one_difference = false;
-
-    for (c1, c2) in s1.chars().zip(s2.chars()) {
-        if c1 != c2 {
-            if found_one_difference {
-                return false;
-            } else {
-                found_one_difference = true
-            }
-        }
-    }
-
-    found_one_difference
+    // An iterator over different char pairs.
+    s1.chars()
+        .zip(s2.chars())
+        .filter(|(c1, c2)| c1 != c2)
+        .take(2)
+        .count()
+        == 1
 }
