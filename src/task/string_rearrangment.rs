@@ -19,34 +19,36 @@ stringsRearrangement(inputArray) = false.
                 "bdc".to_string()]
                 = true
 
-["ff",
- "gf",
- "af",
- "ar",
- "hf"]
+["abc",
+ "abx",
+ "axx",
+ "abc"] = false
 */
 pub fn stringsRearrangement(input_array: Vec<String>) -> bool {
     return input_array
         .iter()
-        .filter(|item| {
-            input_array
-                .clone()
-                .iter()
-                .any(|x| has_one_difference(item, x))
-        })
-        .count()
-        >= input_array.get(0).unwrap().len() - 1;
+        .any(|item| find_difference_possibility(input_array.clone(), item));
+}
 
-    //    return dbg!(has_one_difference(&input_array[0], &input_array[1]));
+fn find_difference_possibility(mut vec: Vec<String>, item_to_link: &str) -> bool {
+    let index = vec.iter().position(|x| x == item_to_link).unwrap();
+    vec.remove(index);
+
+    if vec.len() == 0 {
+        return true;
+    }
+
+    return vec
+        .iter()
+        .filter(|i| has_one_difference(i, item_to_link))
+        .any(|node| find_difference_possibility(vec.clone(), node));
 }
 
 fn has_one_difference(s1: &str, s2: &str) -> bool {
-    println!(
-        "s1={:?}, s2={:?}", s1, s2);
-    dbg!(s1.chars()
+    s1.chars()
         .zip(s2.chars())
         .filter(|(c1, c2)| c1 != c2)
         .take(2)
         .count()
-        == 1)
+        == 1
 }

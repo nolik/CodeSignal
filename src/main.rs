@@ -4,9 +4,9 @@ fn main() {
     println!(
         "{:?}",
         task::string_rearrangment::stringsRearrangement(vec![
-            "aba".to_string(),
-            "bbb".to_string(),
-            "bab".to_string()
+            "ab".to_string(),
+            "bb".to_string(),
+            "aa".to_string()
         ])
     );
 }
