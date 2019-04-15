@@ -3,6 +3,6 @@ mod task;
 fn main() {
     println!(
         "{:?}",
-        task::absolute_sum_min::absoluteValuesSumMinimization(vec![2, 4, 7])
+        task::extract_kth::extractEachKth(vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3)
     );
 }

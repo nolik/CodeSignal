@@ -1,1 +1,1 @@
-pub mod absolute_sum_min;
+pub mod extract_kth;
