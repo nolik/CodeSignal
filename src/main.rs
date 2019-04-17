@@ -3,10 +3,6 @@ mod task;
 fn main() {
     println!(
         "{:?}",
-        task::string_rearrangment::stringsRearrangement(vec![
-            "ab".to_string(),
-            "bb".to_string(),
-            "aa".to_string()
-        ])
+        task::first_digit::firstDigit("var_1__Int".to_string())
     );
 }
