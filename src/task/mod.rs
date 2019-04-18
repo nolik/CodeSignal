@@ -1,1 +1,1 @@
-pub mod first_digit;
+pub mod diff_symb;

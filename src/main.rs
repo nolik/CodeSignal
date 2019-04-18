@@ -3,6 +3,6 @@ mod task;
 fn main() {
     println!(
         "{:?}",
-        task::first_digit::firstDigit("var_1__Int".to_string())
+        task::diff_symb::differentSymbolsNaive("sabca".to_string())
     );
 }
