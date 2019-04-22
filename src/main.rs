@@ -3,6 +3,6 @@ mod task;
 fn main() {
     println!(
         "{:?}",
-        task::first_digit::firstDigit("var_1__Int".to_string())
+        task::array_max_consecutive_sum::arrayMaxConsecutiveSum(vec![1, 3, 2, 4], 3)
     );
 }
