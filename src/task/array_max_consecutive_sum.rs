@@ -1,14 +1,18 @@
 pub fn arrayMaxConsecutiveSum(inputArray: Vec<i32>, k: i32) -> i32 {
-    let mut max = std::i32::MIN;
+    let mut sum = 0;
+    let mut first_sum_item = inputArray[0];
+    for int in 0..k {
+        sum += inputArray[int as usize];
+    }
+    let mut max = sum;
 
-    for index in 0..inputArray.len() as i32 - k + 1 {
-        let mut temp = 0;
-        for sub in 0..k {
-            temp += inputArray[(index + sub) as usize];
-        }
+    for index in k..inputArray.len() as i32 {
+        let current_item = inputArray[index as usize];
+        sum += current_item - first_sum_item;
+        first_sum_item = inputArray[(index - k + 1) as usize];
 
-        if temp > max {
-            max = temp;
+        if sum > max {
+            max = sum;
         }
     }
 
