@@ -1,8 +1,5 @@
 mod task;
 
 fn main() {
-    println!(
-        "{:?}",
-        task::array_max_consecutive_sum::arrayMaxConsecutiveSum(vec![3, 2, 1, 1], 1)
-    );
+    println!("{:?}", task::growint_plant::growingPlant(10, 9, 4));
 }
