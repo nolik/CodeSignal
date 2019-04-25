@@ -1,5 +1,8 @@
 mod task;
 
 fn main() {
-    println!("{:?}", task::knapsack_light::knapsackLight(10, 5, 6, 4, 9));
+    println!(
+        "{:?}",
+        task::longest_digit_prefix::longestDigitsPrefix("123aa1".to_string())
+    );
 }
