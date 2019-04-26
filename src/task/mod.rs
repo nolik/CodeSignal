@@ -1,1 +1,1 @@
-pub mod longest_digit_prefix;
+pub mod digit_degree;
