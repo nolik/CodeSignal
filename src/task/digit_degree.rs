@@ -8,23 +8,20 @@ For n = 91, the output should be
 digitDegree(n) = 2.
 9 + 1 = 10 -> 1 + 0 = 1.
 */
-
 pub fn digitDegree(n: i32) -> i32 {
-    flatter_digit(n)
-}
-
-fn flatter_digit(digit: i32) -> i32 {
     let mut counter = 0;
 
-    let temp = DigitIter(digit).sum::<i32>();
+    flatter_digit(n, counter)
+}
 
-    if DigitIter(temp).count() > 1 {
+fn flatter_digit(digit: i32, mut counter: i32) -> i32 {
+    println!("counter= {:?}", counter);
+    println!("digit= {:?}", digit);
+    if DigitIter(digit).count() > 1 {
+        let temp = DigitIter(digit).sum::<i32>();
         counter += 1;
-        counter += flatter_digit(temp);
+        counter = flatter_digit(temp, counter)
     }
-
-    println!("{:?}", counter);
-
     counter
 }
 
