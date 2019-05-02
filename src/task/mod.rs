@@ -1,1 +1,1 @@
-pub mod digit_degree;
+pub mod bishep_and_pown;
