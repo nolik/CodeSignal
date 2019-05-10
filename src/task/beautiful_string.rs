@@ -1,4 +1,3 @@
-use std::collections::HashMap;
 use std::collections::btree_map::BTreeMap;
 
 /*
@@ -28,26 +27,20 @@ Although there are more bs than cs, this string is not beautiful because there a
 therefore there are more bs than as.
 */
 pub fn isBeautifulString(inputString: String) -> bool {
-//    let chars_map = HashMap::new();
     let alphabet = "abcdefghijklmnopqrstuvwxyz";
 
     let mut chars_map: BTreeMap<char, i32> = alphabet.chars().map(|x| (x, 0)).collect();
-
-//    chars_map.get_key_value("a").unwrap()..
 
     for x in inputString.chars() {
         let mut counter = chars_map.get(&x).unwrap().to_owned();
         counter += 1;
         chars_map.insert(x, counter);
     }
-    println!(
-        "{:?}", chars_map);
 
-    let result = chars_map.iter().map(|(key, value)| *value).collect::<Vec<i32>>();
+    let result = chars_map
+        .iter()
+        .map(|(key, value)| *value)
+        .collect::<Vec<i32>>();
 
-    println!(
-        "{:?}", result);
-
-//    !result.windows(2).map())).any(|x, y| x < y)
-    true
+    !result.windows(2).any(|item| item[0] < item[1])
 }
