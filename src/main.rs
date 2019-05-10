@@ -3,6 +3,6 @@ mod task;
 fn main() {
     println!(
         "{:?}",
-        task::bishep_and_pown::bishopAndPawn("a5".to_string(), "c3".to_string())
+        task::beautiful_string::isBeautifulString("bbbaacdafe".to_string())
     );
 }
