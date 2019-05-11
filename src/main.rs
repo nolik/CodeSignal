@@ -3,6 +3,6 @@ mod task;
 fn main() {
     println!(
         "{:?}",
-        task::beautiful_string::isBeautifulString("bbbaacdafe".to_string())
+        task::email_domain::findEmailDomain("\"much.more unusual\"@yahoo.com".to_string())
     );
 }

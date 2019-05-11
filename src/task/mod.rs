@@ -1,1 +1,1 @@
-pub mod beautiful_string;
+pub mod email_domain;
