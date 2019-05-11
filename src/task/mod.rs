@@ -1,1 +1,1 @@
-pub mod bishep_and_pown;
+pub mod beautiful_string;
