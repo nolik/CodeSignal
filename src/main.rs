@@ -3,6 +3,6 @@ mod task;
 fn main() {
     println!(
         "{:?}",
-        task::email_domain::findEmailDomain("\"much.more unusual\"@yahoo.com".to_string())
+        task::build_palindrom::buildPalindrome("abc".to_string())
     );
 }
