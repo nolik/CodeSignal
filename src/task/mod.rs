@@ -1,1 +1,1 @@
-pub mod email_domain;
+pub mod build_palindrom;
