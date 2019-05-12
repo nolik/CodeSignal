@@ -1,1 +1,1 @@
-pub mod chess_board_cell;
+pub mod email_domain;

@@ -3,6 +3,6 @@ mod task;
 fn main() {
     println!(
         "{:?}",
-        task::chess_board_cell::chessBoardCellColor("H1".to_string(), "H1".to_string())
+        task::email_domain::findEmailDomain("\"much.more unusual\"@yahoo.com".to_string())
     );
 }
