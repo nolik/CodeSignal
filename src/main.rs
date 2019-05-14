@@ -3,6 +3,6 @@ mod task;
 fn main() {
     println!(
         "{:?}",
-        task::build_palindrom::buildPalindrome("abc".to_string())
+        task::elections_winners::electionsWinners(vec![2, 3, 5, 2], 3)
     );
 }
