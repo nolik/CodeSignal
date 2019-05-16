@@ -1,8 +1,10 @@
+extern crate core;
+
 mod task;
 
 fn main() {
     println!(
         "{:?}",
-        task::elections_winners::electionsWinners(vec![2, 3, 5, 2], 3)
+        task::mac_adress::isMAC48Address("0-12-34-56-78-9A".to_string())
     );
 }
