@@ -5,6 +5,6 @@ mod task;
 fn main() {
     println!(
         "{:?}",
-        task::is_digit::isDigit('0')
+        task::line_encoding::lineEncoding("abbcabb".to_string())
     );
 }
