@@ -1,1 +1,1 @@
-pub mod is_digit;
+pub mod chess_knight;
