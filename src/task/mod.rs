@@ -1,1 +1,1 @@
-pub mod line_encoding;
+pub mod chess_knight;
