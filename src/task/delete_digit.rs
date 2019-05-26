@@ -1,20 +1,15 @@
 pub fn deleteDigit(digit: i32) -> i32 {
-    let mut digits = Digits::new(digit as i32).collect::<Vec<i32>>();
-    let mut result = 0;
-    let mut mult = 1;
+    let digits = Digits::new(digit).collect::<Vec<i32>>();
+    let mut result_vec;
+
     println!("{:?}", digits);
-    let min_item = digits.into_iter().min().unwrap();
+    let min_item = digits.iter().min().unwrap();
+    let index = digits.iter().position(|x| x == min_item).unwrap();
+    result_vec = digits.clone();
+    result_vec.remove(index);
+    result_vec.reverse();
 
-    let index = digits.into_iter().position(|x| x == min_item).unwrap();
-    digits.remove(index);
-    digits.reverse();
-
-    for x in digits {
-        result += mult * x;
-        mult = mult * 10;
-    }
-
-    result
+    to_sum_digit(&result_vec)
 }
 
 struct Digits {
@@ -49,4 +44,16 @@ impl Iterator for Digits {
             v
         }
     }
+}
+
+fn to_sum_digit(digits: &Vec<i32>) -> i32 {
+    let mut sum_digit = 0;
+    let mut mult = 1;
+
+    for x in digits {
+        sum_digit += mult * x;
+        mult = mult * 10;
+    }
+
+    return sum_digit;
 }
