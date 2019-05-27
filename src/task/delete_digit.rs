@@ -1,10 +1,20 @@
+/*
+hint. if you discover a digit that is bigger than the previous one you don't need to look any further
+*/
 pub fn deleteDigit(digit: i32) -> i32 {
     let digits = Digits::new(digit).collect::<Vec<i32>>();
     let mut result_vec;
 
-    println!("{:?}", digits);
-    let min_item = digits.iter().min().unwrap();
-    let index = digits.iter().position(|x| x == min_item).unwrap();
+    let min_item = digits.windows(2).find(|item| item[0] < item[1]);
+    let min = match min_item {
+        Some(x) => {
+            &x[0]
+        }
+        None => {
+            digits.last().unwrap()
+        }
+    };
+    let index = digits.iter().position(|x| x == min).unwrap();
     result_vec = digits.clone();
     result_vec.remove(index);
     result_vec.reverse();
