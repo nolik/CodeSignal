@@ -1,1 +1,1 @@
-pub mod chess_knight;
+pub mod delete_digit;
