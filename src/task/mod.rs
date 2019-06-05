@@ -1,1 +1,1 @@
-pub mod sum_up_numbers;
+pub mod difference_squares;
