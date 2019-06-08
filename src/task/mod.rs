@@ -1,1 +1,1 @@
-pub mod difference_squares;
+pub mod digits_product;
