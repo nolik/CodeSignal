@@ -1,1 +1,1 @@
-pub mod digits_product;
+pub mod file_naming;
