@@ -1,1 +1,1 @@
-pub mod spiral_matrix;
+pub mod sudoku;
