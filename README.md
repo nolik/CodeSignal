@@ -1,2 +1,2 @@
 # CodeSignal
-CodeSignal task algoritms impelented on Rust.
+CodeSignal algorithms implemented on Rust.
